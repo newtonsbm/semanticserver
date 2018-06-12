@@ -30,7 +30,7 @@ let CodesystemController = class CodesystemController {
     }
 };
 __decorate([
-    rest_1.post('/codesystems'),
+    rest_1.post('/codesystems/create'),
     __param(0, rest_1.requestBody()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [models_1.Codesystem]),

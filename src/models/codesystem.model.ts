@@ -23,12 +23,14 @@ export class Codesystem extends Entity {
     id?: number;
 
     @property({type: 'string'})
-    version: string;
+    url: string;
+
+    //identifier
 
     @property({type: 'string'})
-    uri: string;
-    
-    @property({type: 'string'})
+    version: string;
+
+    @property({type: 'string', required: true})
     name: string;
 
     @property({type: 'string'})
@@ -45,6 +47,40 @@ export class Codesystem extends Entity {
     
     @property({type: 'string'})
     publisher: string;
+
+    //contact
+
+    @property({type: 'string'})
+    description: string;
+
+    //useContext
+
+    //jurisdiction
+
+    @property({type: 'string'})
+    purpose: string;
+
+    @property({type: 'string'})
+    copyright: string;
+
+    @property({type: 'boolean'})
+    caseSensitive: boolean; 
+
+    //valueSet
+    @property({type: 'string'})
+    hierarchyMeaning: string;
+
+    @property({type: 'boolean'})
+    compositional: boolean; 
+
+    @property({type: 'boolean'})
+    versionNeeded: boolean; 
+
+    @property({type: 'string', required: 'true'})
+    content: string;
+
+    @property({type: 'number'})
+    count: number;
 
     getId(){
         return this.id;

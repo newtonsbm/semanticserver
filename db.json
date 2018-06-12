@@ -1,0 +1,12 @@
+{
+  "ids": {
+    "Codesystem": 4
+  },
+  "models": {
+    "Codesystem": {
+      "1": "{\"name\":\"Teste Ontologia\",\"status\":\"online\",\"id\":1}",
+      "2": "{\"name\":\"Teste Ontologia\",\"status\":\"online\",\"id\":2}",
+      "3": "{\"name\":\"Teste Ontologia\",\"status\":\"online\",\"id\":3}"
+    }
+  }
+}

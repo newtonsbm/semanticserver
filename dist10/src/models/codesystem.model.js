@@ -43,7 +43,7 @@ __decorate([
     __metadata("design:type", String)
 ], Codesystem.prototype, "uri", void 0);
 __decorate([
-    repository_1.property({ type: 'string' }),
+    repository_1.property({ type: 'string', required: true }),
     __metadata("design:type", String)
 ], Codesystem.prototype, "name", void 0);
 __decorate([
