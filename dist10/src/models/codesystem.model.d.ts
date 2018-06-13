@@ -1,13 +1,22 @@
 import { Entity } from '@loopback/repository';
 export declare class Codesystem extends Entity {
     id?: number;
+    url: string;
     version: string;
-    uri: string;
     name: string;
     title: string;
     status: string;
     experimental: boolean;
     date: Date;
     publisher: string;
+    description: string;
+    purpose: string;
+    copyright: string;
+    caseSensitive: boolean;
+    hierarchyMeaning: string;
+    compositional: boolean;
+    versionNeeded: boolean;
+    content: string;
+    count: number;
     getId(): number | undefined;
 }

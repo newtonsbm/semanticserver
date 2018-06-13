@@ -37,11 +37,11 @@ __decorate([
 __decorate([
     repository_1.property({ type: 'string' }),
     __metadata("design:type", String)
-], Codesystem.prototype, "version", void 0);
+], Codesystem.prototype, "url", void 0);
 __decorate([
     repository_1.property({ type: 'string' }),
     __metadata("design:type", String)
-], Codesystem.prototype, "uri", void 0);
+], Codesystem.prototype, "version", void 0);
 __decorate([
     repository_1.property({ type: 'string', required: true }),
     __metadata("design:type", String)
@@ -66,6 +66,42 @@ __decorate([
     repository_1.property({ type: 'string' }),
     __metadata("design:type", String)
 ], Codesystem.prototype, "publisher", void 0);
+__decorate([
+    repository_1.property({ type: 'string' }),
+    __metadata("design:type", String)
+], Codesystem.prototype, "description", void 0);
+__decorate([
+    repository_1.property({ type: 'string' }),
+    __metadata("design:type", String)
+], Codesystem.prototype, "purpose", void 0);
+__decorate([
+    repository_1.property({ type: 'string' }),
+    __metadata("design:type", String)
+], Codesystem.prototype, "copyright", void 0);
+__decorate([
+    repository_1.property({ type: 'boolean' }),
+    __metadata("design:type", Boolean)
+], Codesystem.prototype, "caseSensitive", void 0);
+__decorate([
+    repository_1.property({ type: 'string' }),
+    __metadata("design:type", String)
+], Codesystem.prototype, "hierarchyMeaning", void 0);
+__decorate([
+    repository_1.property({ type: 'boolean' }),
+    __metadata("design:type", Boolean)
+], Codesystem.prototype, "compositional", void 0);
+__decorate([
+    repository_1.property({ type: 'boolean' }),
+    __metadata("design:type", Boolean)
+], Codesystem.prototype, "versionNeeded", void 0);
+__decorate([
+    repository_1.property({ type: 'string', required: 'true' }),
+    __metadata("design:type", String)
+], Codesystem.prototype, "content", void 0);
+__decorate([
+    repository_1.property({ type: 'number' }),
+    __metadata("design:type", Number)
+], Codesystem.prototype, "count", void 0);
 Codesystem = __decorate([
     repository_1.model()
 ], Codesystem);

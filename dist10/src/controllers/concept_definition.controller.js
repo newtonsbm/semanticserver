@@ -18,33 +18,24 @@ const repository_1 = require("@loopback/repository");
 const repositories_1 = require("../repositories");
 const rest_1 = require("@loopback/rest");
 const models_1 = require("../models");
-let CodesystemController = class CodesystemController {
-    constructor(codesystemRepo) {
-        this.codesystemRepo = codesystemRepo;
+let ConceptDefinitionController = class ConceptDefinitionController {
+    constructor(conceptDefRepo) {
+        this.conceptDefRepo = conceptDefRepo;
     }
-    async createCodesystem(codesystem) {
-        return await this.codesystemRepo.create(codesystem);
-    }
-    async findCodesystems() {
-        return await this.codesystemRepo.find();
+    async createCodesystem(conceptDefinition) {
+        return await this.conceptDefRepo.create(conceptDefinition);
     }
 };
 __decorate([
-    rest_1.post('/codesystems'),
+    rest_1.post('/concept_definitions'),
     __param(0, rest_1.requestBody()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [models_1.Codesystem]),
+    __metadata("design:paramtypes", [models_1.ConceptDefinition]),
     __metadata("design:returntype", Promise)
-], CodesystemController.prototype, "createCodesystem", null);
-__decorate([
-    rest_1.get('/codesystems'),
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Promise)
-], CodesystemController.prototype, "findCodesystems", null);
-CodesystemController = __decorate([
-    __param(0, repository_1.repository(repositories_1.CodesystemRepository)),
-    __metadata("design:paramtypes", [repositories_1.CodesystemRepository])
-], CodesystemController);
-exports.CodesystemController = CodesystemController;
-//# sourceMappingURL=codesystem.controller.js.map
+], ConceptDefinitionController.prototype, "createCodesystem", null);
+ConceptDefinitionController = __decorate([
+    __param(0, repository_1.repository(repositories_1.ConceptDefinitionRepository)),
+    __metadata("design:paramtypes", [repositories_1.ConceptDefinitionRepository])
+], ConceptDefinitionController);
+exports.ConceptDefinitionController = ConceptDefinitionController;
+//# sourceMappingURL=concept_definition.controller.js.map

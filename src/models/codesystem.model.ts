@@ -67,6 +67,7 @@ export class Codesystem extends Entity {
     caseSensitive: boolean; 
 
     //valueSet
+
     @property({type: 'string'})
     hierarchyMeaning: string;
 
