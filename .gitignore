@@ -62,3 +62,7 @@ api-docs/
 
 # Transpiled JavaScript files from Typescript
 dist/
+
+#memory test and production database
+db.json
+testdb.json
