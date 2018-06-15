@@ -2,7 +2,7 @@ import {Entity, property, model} from '@loopback/repository';
 
 
 @model()
-export class ConceptDefinition extends Entity {
+export class Property extends Entity {
 
     @property({type: 'number', id: true})
     id?: number;
@@ -14,9 +14,12 @@ export class ConceptDefinition extends Entity {
     code: string;
 
     @property({type: 'string'})
-    display: string;
+    uri: string;
 
     @property({type: 'string'})
     definition: string;
+
+    @property({type: 'string'})
+    description: string;
 
 }
