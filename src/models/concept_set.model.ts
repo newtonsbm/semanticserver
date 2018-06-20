@@ -2,21 +2,24 @@ import {Entity, property, model} from '@loopback/repository';
 
 
 @model()
-export class ConceptProperty extends Entity {
+export class ConceptSet extends Entity {
 
     @property({type: 'number', id: true})
     id?: number;
 
     @property({type: 'number'})
-    conceptDefinitionId: number;
+    valueSetId: number;
 
     @property({type: 'number'})
-    propertyId: number;
+    codesystemId: number;
 
     @property({type: 'string'})
-    code: string;
+    system: string;
 
     @property({type: 'string'})
-    value: string;
+    version: string;
+
+    @property({type: 'string'})
+    valueset: string;
 
 }

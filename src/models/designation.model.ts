@@ -2,7 +2,7 @@ import {Entity, property, model} from '@loopback/repository';
 
 
 @model()
-export class Property extends Entity {
+export class Designation extends Entity {
 
     @property({type: 'number', id: true})
     id?: number;
