@@ -10,7 +10,7 @@ import { CodeSystem } from '../models';
 export class CodeSystemController {
 
   constructor(
-    @repository(CodesystemRepository) protected codesystemRepo: CodesystemRepository,
+    @repository(CodeSystemRepository) protected codesystemRepo: CodeSystemRepository,
   ) {}
 
   @post('/codesystems')
