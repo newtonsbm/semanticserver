@@ -11,7 +11,7 @@ export class ConceptSet extends Entity {
     valueSetId: number;
 
     @property({type: 'number'})
-    codesystemId: number;
+    codeSystemId: number;
 
     @property({type: 'string'})
     system: string;

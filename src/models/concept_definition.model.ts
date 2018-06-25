@@ -8,7 +8,7 @@ export class ConceptDefinition extends Entity {
     id?: number;
 
     @property({type: 'number'})
-    codesystemId: number;
+    codeSystemId: number;
 
     @property({type: 'string'})
     code: string;

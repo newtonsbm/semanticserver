@@ -17,7 +17,7 @@ count : unsignedInt [0..1]
 */
 
 @model()
-export class Codesystem extends Entity {
+export class CodeSystem extends Entity {
 
     @property({type: 'number', id: true})
     id?: number;
