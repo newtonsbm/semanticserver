@@ -1,8 +1,9 @@
 import { Entity } from '@loopback/repository';
-export declare class ConceptDefinition extends Entity {
+export declare class Property extends Entity {
     id?: number;
     codeSystemId: number;
     code: string;
-    display: string;
+    uri: string;
     definition: string;
+    description: string;
 }

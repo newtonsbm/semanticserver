@@ -13,12 +13,12 @@ describe('Codesystem (acceptance)', () => {
     after(async () => { await app.stop(); });
     it('creates a codesystem', async () => {
         let codesystemData = {
-            name: 'teste_code_system',
-            title: 'Teste Code System',
+            name: 'test_code_system',
+            title: 'Test Code System',
             status: 'completed',
             content: 'conteúdo'
         };
-        let response = await client.post('/codesystems')
+        let response = await client.post('/CodeSystem')
             .set('Content-Type', 'application/json')
             .send(codesystemData);
         testlab_1.expect(response.body).to.containEql(codesystemData);

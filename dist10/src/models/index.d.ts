@@ -1,2 +1,2 @@
-export * from './codesystem.model';
+export * from './code_system.model';
 export * from './concept_definition.model';

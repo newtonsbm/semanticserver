@@ -10,30 +10,30 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const repository_1 = require("@loopback/repository");
-let ConceptDefinition = class ConceptDefinition extends repository_1.Entity {
+let ConceptProperty = class ConceptProperty extends repository_1.Entity {
 };
 __decorate([
     repository_1.property({ type: 'number', id: true }),
     __metadata("design:type", Number)
-], ConceptDefinition.prototype, "id", void 0);
+], ConceptProperty.prototype, "id", void 0);
 __decorate([
     repository_1.property({ type: 'number' }),
     __metadata("design:type", Number)
-], ConceptDefinition.prototype, "codeSystemId", void 0);
+], ConceptProperty.prototype, "conceptDefinitionId", void 0);
+__decorate([
+    repository_1.property({ type: 'number' }),
+    __metadata("design:type", Number)
+], ConceptProperty.prototype, "propertyId", void 0);
 __decorate([
     repository_1.property({ type: 'string' }),
     __metadata("design:type", String)
-], ConceptDefinition.prototype, "code", void 0);
+], ConceptProperty.prototype, "code", void 0);
 __decorate([
     repository_1.property({ type: 'string' }),
     __metadata("design:type", String)
-], ConceptDefinition.prototype, "display", void 0);
-__decorate([
-    repository_1.property({ type: 'string' }),
-    __metadata("design:type", String)
-], ConceptDefinition.prototype, "definition", void 0);
-ConceptDefinition = __decorate([
+], ConceptProperty.prototype, "value", void 0);
+ConceptProperty = __decorate([
     repository_1.model()
-], ConceptDefinition);
-exports.ConceptDefinition = ConceptDefinition;
-//# sourceMappingURL=concept_definition.model.js.map
+], ConceptProperty);
+exports.ConceptProperty = ConceptProperty;
+//# sourceMappingURL=concept_property.model.js.map

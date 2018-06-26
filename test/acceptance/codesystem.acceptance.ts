@@ -20,7 +20,7 @@ describe('Codesystem (acceptance)', () => {
             status: 'completed',
             content: 'conteúdo'
         };
-        let response = await client.post('/codesystems')
+        let response = await client.post('/CodeSystem')
             .set('Content-Type','application/json')
             .send(codesystemData);
         expect(response.body).to.containEql(codesystemData);

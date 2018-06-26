@@ -3,5 +3,5 @@ import { ConceptDefinition } from '../models';
 export declare class ConceptDefinitionController {
     protected conceptDefRepo: ConceptDefinitionRepository;
     constructor(conceptDefRepo: ConceptDefinitionRepository);
-    createCodesystem(conceptDefinition: ConceptDefinition): Promise<ConceptDefinition>;
+    createConceptDefinition(conceptDefinition: ConceptDefinition): Promise<ConceptDefinition>;
 }

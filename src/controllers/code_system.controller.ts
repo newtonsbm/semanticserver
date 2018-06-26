@@ -13,12 +13,12 @@ export class CodeSystemController {
     @repository(CodeSystemRepository) protected codesystemRepo: CodeSystemRepository,
   ) {}
 
-  @post('/codesystems')
+  @post('/CodeSystem')
   async createCodesystem(@requestBody() codesystem: CodeSystem) {
     return await this.codesystemRepo.create(codesystem);
   }
 
-  @get('/codesystems')
+  @get('/CodeSystem')
   async findCodesystems(): Promise<CodeSystem[]> {
     return await this.codesystemRepo.find();
   }

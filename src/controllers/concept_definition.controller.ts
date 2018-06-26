@@ -13,8 +13,8 @@ export class ConceptDefinitionController {
     @repository(ConceptDefinitionRepository) protected conceptDefRepo: ConceptDefinitionRepository,
   ) {}
 
-  @post('/concept_definitions')
-  async createCodesystem(@requestBody() conceptDefinition: ConceptDefinition) {
+  @post('/ConceptDefinition')
+  async createConceptDefinition(@requestBody() conceptDefinition: ConceptDefinition) {
     return await this.conceptDefRepo.create(conceptDefinition);
   }
 

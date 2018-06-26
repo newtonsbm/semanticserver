@@ -18,24 +18,33 @@ const repository_1 = require("@loopback/repository");
 const repositories_1 = require("../repositories");
 const rest_1 = require("@loopback/rest");
 const models_1 = require("../models");
-let ConceptDefinitionController = class ConceptDefinitionController {
-    constructor(conceptDefRepo) {
-        this.conceptDefRepo = conceptDefRepo;
+let CodeSystemController = class CodeSystemController {
+    constructor(codesystemRepo) {
+        this.codesystemRepo = codesystemRepo;
     }
-    async createConceptDefinition(conceptDefinition) {
-        return await this.conceptDefRepo.create(conceptDefinition);
+    async createCodesystem(codesystem) {
+        return await this.codesystemRepo.create(codesystem);
+    }
+    async findCodesystems() {
+        return await this.codesystemRepo.find();
     }
 };
 __decorate([
-    rest_1.post('/ConceptDefinition'),
+    rest_1.post('/CodeSystem'),
     __param(0, rest_1.requestBody()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [models_1.ConceptDefinition]),
+    __metadata("design:paramtypes", [models_1.CodeSystem]),
     __metadata("design:returntype", Promise)
-], ConceptDefinitionController.prototype, "createConceptDefinition", null);
-ConceptDefinitionController = __decorate([
-    __param(0, repository_1.repository(repositories_1.ConceptDefinitionRepository)),
-    __metadata("design:paramtypes", [repositories_1.ConceptDefinitionRepository])
-], ConceptDefinitionController);
-exports.ConceptDefinitionController = ConceptDefinitionController;
-//# sourceMappingURL=concept_definition.controller.js.map
+], CodeSystemController.prototype, "createCodesystem", null);
+__decorate([
+    rest_1.get('/CodeSystem'),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], CodeSystemController.prototype, "findCodesystems", null);
+CodeSystemController = __decorate([
+    __param(0, repository_1.repository(repositories_1.CodeSystemRepository)),
+    __metadata("design:paramtypes", [repositories_1.CodeSystemRepository])
+], CodeSystemController);
+exports.CodeSystemController = CodeSystemController;
+//# sourceMappingURL=code_system.controller.js.map
